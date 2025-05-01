@@ -1,8 +1,8 @@
 import torch.nn as nn
 
 class Generator(nn.Module):
-    def __init__(self, nz, ngf, nc):
-        super(Generator, self).__init__()
+    def __init__(self, nz=100, ngf=64, nc=1):
+        super().__init__()
         self.main = nn.Sequential(
             nn.ConvTranspose2d(nz, ngf * 8, 4, 1, 0, bias=False),
             nn.BatchNorm2d(ngf * 8),

@@ -1,8 +1,8 @@
 import torch.nn as nn
 
 class Discriminator(nn.Module):
-    def __init__(self, nc, ndf):
-        super(Discriminator, self).__init__()
+    def __init__(self, nc=1, ndf=64):
+        super().__init__()
         self.main = nn.Sequential(
             nn.Conv2d(nc, ndf, 4, 2, 1, bias=False),
             nn.LeakyReLU(0.2, inplace=True),
