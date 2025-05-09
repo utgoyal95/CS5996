@@ -1,7 +1,7 @@
 # CS5996: AI Result Replication: DCGAN Unsupervised Representation Learning
 
 ## Project Goal
-Reproduce and explore the key findings from “Unsupervised Representation Learning with Deep Convolutional GANs” (DCGAN) by Radford et al. (2016). Specifically, we will:
+Reproduce and explore the key findings from “Unsupervised Representation Learning with Deep Convolutional GANs” (DCGAN) by Radford et al. (2016) (found here: https://arxiv.org/pdf/1511.06434). Specifically, we will:
 
 1. **Re-implement a DCGAN** that learns to generate realistic 64×64 RGB images from noise—using only unlabeled data.  
 2. **Verify interpretability** of learned features by visualizing:  
